@@ -1,0 +1,107 @@
+거래처코드 ISSUANCE NUMBER
+상 호 NAME OF COMPANY
+대표자  NAME OF REPRESENTATIVE
+관리번호 (사업자번호) BUISNESS REGISTRATION NUMBER 
+업태 BUSINESS TYPE
+업종 BUSINESS ITEM
+주소- 우편번호 POST CODE
+주소 ADDRESS
+이메일 EMAIL
+전화 TEL
+휴대전화 PHONE
+팩스 FAX
+Sale Type = 판매처
+----------
+비고
+-----------
+계산서발행용상호 NAME FOR TaxInvoice
+등록일 RegiDate
+폐기일 CloseDate
+출력용 비고 Print Remark
+입금은행 Bank
+계좌주 Account Holder
+계좌번호 Account Number
+암호 Password
+지급관리  본사/ 매장 
+물류센터 물류센터 코드 / "중부유통에프에스"  Transport Company
+Transport code
+유형    /매장/매출/물류센터/매입/사입  Trade Type  : Store
+브랜드 "치킨과 바람피자" / 타입 등등  BrandName : 
+배송요일  월 화 수 목 금 토 일 	DeliveryOffer	
+입금유형 후입금/  선입금/ 충전형 / 내일드림 
+
+폐기거래처   True /False
+
+부가설정
+/ 본사메모
+
+
+/매장관리
+
+/매출처관리
+
+/담당자관리
+
+여신설정
+물류대행 " 중부유통" /  "한화푸드" / "올라푸드"   
+여신한도  "0"   저장 / 삭제
+
+판매대금관리
+횟수 --- 
+말일 / 지정 "0"일
+
+매입 대금 관리
+지급 // 말일 지정 / 일
+
+---------------------------------------------
+
+조회조건 거래그룹 // 코드 // 
+상호  // 대표자
+관리번호 //   매장/ 매출 / 물류/ 매입 / 사입
+브랜드/ 전체
+
+다중단가 Multy Price = 구매하는 갯수에 따른 단가
+Customer DC  0.00%  할인에 적용/ 단가에 적용
+기초미불금 Basic Arrears  = 기초매입잔액 / 지불하지 않고 남아 있는 금액
+기초 미수금 Basic Receivable = 미수금 
+기초 포인트 Basic Point 
+
+미수- 미불 Receivable
+
+Class   거래처 대리점 대형차 입출금장부 
+SaleType   매출처 매입처 매입매출처 경비 기타
+
+
+
+
+JMenu Jm_Menu = new JMenu("메뉴");
+JMenuItem menu_ServerON = new JMenuItem("서버 연동");
+JMenuItem menu_Exit = new JMenuItem("종료");
+JMenu Basic_management = new JMenu("기초관리");
+JMenuItem Basic_CustomerManagement = new JMenuItem("거래처관리");
+JMenuItem Basic_ProductManagement = new JMenuItem("제품관리");
+JMenuItem Basic_MarketManagement = new JMenuItem("마켓관리");
+JMenuItem Basic_StorageManagement = new JMenuItem("창고관리");
+JMenuItem Basic_EmployeeManagement = new JMenuItem("직원관리");
+JMenu orderManagement = new JMenu("주문관리");
+JMenuItem oder_OrderListManagement = new JMenuItem("발주관리");
+JMenuItem oder_StockManagement = new JMenuItem("재고관리");
+JLabel lbl_img = new JLabel("중앙패널");
+
+
+JButton cs_AddressCodeFinder =
+JLabel cs_Address =
+JLabel cs_DetailAddress =
+JLabel cs_Email =
+JLabel cs_TelNum =
+JLabel cs_MobileNum =
+JLabel cs_Fax =
+JLabel cs_NameForInvoice =
+JLabel cs_BankName =
+JLabel cs_AccountHolder =
+JLabel cs_AccountNumber =
+JLabel cs_RegiDate =
+JLabel cs_CloseDate =
+JComboBox cs_SaleTypeComboBox =
+JButton cs_Insert =
+JButton cs_update =

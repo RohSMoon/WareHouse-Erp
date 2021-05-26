@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="jgoodies-common-1.8.0.jar" sourcepath="jgoodies-common-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/mybatis-3.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/javax.mail-1.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/spring-beans-4.3.30.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/spring-context-4.3.30.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/spring-core-4.3.30.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rsmoo/eclipse-workspace/spring-expression-4.3.30.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/app/ROHMoon/product/11.1.0/db_1/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

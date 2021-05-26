@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Customer_Management.SqlMapper">
+<resultMap type="csmVo" id="csmResultMap">
+		<id column="ISSUANCENUMBER"             property="IssuanceNumber"/>
+		<id column="CUSTOMERNAME"               property="CustomerName"/>
+		<id column="BUSINESSREGISTRATIONNUMBER" property="BusinRegNum"/>
+		<id column="POSTCODE"                   property="Postcode"/>
+		<id column="ADDRESS"                    property="Address"/>
+		<id column="BUSINESSTYPE"               property="BusinType"/>
+		<id column="BUSINESSITEM"               property="BusinItem"/>
+		<id column="EMAIL"                      property="Email"/>
+		<id column="HP"                         property="HP"/>
+		<id column="NAMEOFREPRESENTATIVE"       property="NameOfRepresentative"/>
+</resultMap>
+	<select id="selectList" resultType = "map">
+		/*Customer_Management.SqlMapper.selectList csmResult SelectSQL*/
+		select ISSUANCENUMBER
+			, CUSTOMERNAME	
+			, NAMEOFREPRESENTATIVE
+			, BUSINESSREGISTRATIONNUMBER   	 	
+			, BUSINESSTYPE	 	
+			, BUSINESSITEM	  
+			, POSTCODE	      
+			, ADDRESS
+			, DETAILADDRESS
+			, EMAIL
+			, TEL
+			, HP
+			, FAX
+			, CUSTOMERTOBILL
+			, BANKNAME
+			, ACCOUNTHOLDER
+			, ACCOUNTNUMBER
+			, REGIDATE
+			, CLOSEDATE
+			, MEMO
+		from CUSTOMER
+	</select>
+	<insert id="insert" parameterType="csmVo">
+		insert into CUSTOMER
+		(
+			ISSUANCENUMBER
+			,CUSTOMERNAME
+			,BUSINESSREGISTRATIONNUMBER
+			,POSTCODE
+			,ADDRESS
+			,BUSINESSTYPE
+			,BUSINESSITEM
+			,EMAIL
+			,HP
+			,NAMEOFREPRESENTATIVE
+		)
+		 values
+		 (                     
+			#{IssuanceNumber},
+			#{CustomerName},
+			#{BusinRegNum},
+			#{Postcode},
+			#{Address},
+			#{BusinType},
+			#{BusinItem},
+			#{Email},
+			#{HP},
+			#{NameOfRepresentative}
+		)
+	</insert>
+	<update id="update" parameterType="csmVo">
+		 update CUSTOMER set
+			,CUSTOMERNAME          =  #{CUSTOMERNAME}
+			,NAMEOFREPRESENTATIVE  =  #{NAMEOFREPRESENTATIVE}
+			,BUSINREGNUM           =  #{BUSINREGNUM}
+			,BUSINTYPE             =  #{BUSINTYPE}
+			,BUSINITEM             =  #{BUSINITEM}
+			,POSTCODE              =  #{POSTCODE}
+			,ADDRESS               =  #{ADDRESS}
+			,DETAILADDRESS         =  #{DETAILADDRESS}
+			,EMAIL                 =  #{EMAIL}
+			,TEL                   =  #{TEL}
+			,HP                    =  #{HP}
+			,FAX                   =  #{FAX}
+			,CUSTOMERNAMETOBILL    =  #{CUSTOMERNAMETOBILL}
+			,BANKNAME              =  #{BANKNAME}
+			,ACCOUNTHOLDER         =  #{ACCOUNTHOLDER}
+			,ACCOUNTNUMBER         =  #{ACCOUNTNUMBER}
+			,REGIDATE              =  #{REGIDATE}
+			,CLOSEDATE             =  #{CLOSEDATE}
+			,MEMO                  =  #{MEMO}
+		where ISSUANCENUMBER = #{ISSUANCENUMBER}
+	</update>
+	
+	<delete id="delete" parameterType="csmVo">
+	        delete from CUSTOMER
+	        where ISSUANCENUMBER = #{ISSUANCENUMBER}
+	</delete>
+</mapper>
